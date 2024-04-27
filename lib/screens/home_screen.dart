@@ -26,8 +26,8 @@ class _HomeScreenState extends State<HomeScreen> {
       drawer: const Drawer(
 
       ),
-      body: Column(
-        children: const [
+      body: const Column(
+        children: [
           WelcomeCard(name: 'Agilan'),
         ],
       ),
