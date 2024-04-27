@@ -11,7 +11,6 @@ class WelcomeCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 141,
       decoration: BoxDecoration(
         color: Theme.of(context).colorScheme.primary,
         borderRadius: BorderRadius.circular(12),
@@ -27,7 +26,7 @@ class WelcomeCard extends StatelessWidget {
             style: GoogleFonts.adventPro(
               fontWeight: FontWeight.w700,
               fontSize: 12,
-              color: GlobalConstants.textSecondary,
+              color: GlobalConstants.onPrimary,
             ),
           ),
           const SizedBox(height: 8),
@@ -36,20 +35,19 @@ class WelcomeCard extends StatelessWidget {
             style: GoogleFonts.amaranth(
               fontWeight: FontWeight.w400,
               fontSize: 18,
-              color: GlobalConstants.textSecondary,
+              color: GlobalConstants.onPrimary,
             ),
           ),
           const SizedBox(height: 21),
           ElevatedButton(
             onPressed: () {},
-            style: ElevatedButton.styleFrom(
-              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8),
-              ),
-            ),
-            child: const Text('Get Started'),
+            child: Text('Invest Today', style: GoogleFonts.adventPro(
+              fontWeight: FontWeight.w700,
+              fontSize: 12,
+              color: GlobalConstants.primaryColor,
+            ),),
           ),
+          const SizedBox(height: 20),
         ],
       ),
     );
